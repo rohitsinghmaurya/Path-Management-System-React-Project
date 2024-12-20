@@ -1,0 +1,32 @@
+.navi1{
+     display: inline-block;
+     white-space: nowrap;
+     animation-name: scroll;
+     animation-duration: 30s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+.navi1 h4{
+     display: inline-block;
+     font-size: 120px;
+     font-weight: 900;
+     font-family: gilroy;
+     margin-right: 10px;
+     transition: all linear 0.5s;
+     color: transparent;
+     -webkit-text-stroke: 2px rgba(47,255,227,0.908);
+     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.navi1 h4:hover{
+     color: #95C11E;
+}
+
+/* @keyframes scroll{
+     from{
+         transform: translate(0);
+     }
+     to{
+         transform: translate(-100%);
+     }
+} */

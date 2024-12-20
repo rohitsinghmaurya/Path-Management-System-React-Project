@@ -1,0 +1,47 @@
+
+.first-page-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left bottom, #95C11E, aqua);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 1s ease; 
+    z-index: 1;
+  }
+  
+
+  .first-page-container h1 {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 900;
+    opacity: 1; 
+    width: 30%;
+    text-transform: uppercase;
+    background-image: linear-gradient(30deg, #ff0000, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    background-size: 200% 100%;
+    -webkit-text-stroke: 2px white;
+    transition: opacity 2s ease; 
+  }
+  
+  /* When the 'loaded' class is added, make the text fade in */
+  .first-page-container h1.loaded {
+    opacity: 1; /* Fade in the text */
+  }
+  
+  /* Fade-out effect for the entire first page container */
+  .first-page-container.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 0s 1s; /* Fade-out with a delay for visibility */
+  }
+  
